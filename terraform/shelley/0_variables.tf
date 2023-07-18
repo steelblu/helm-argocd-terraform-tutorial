@@ -33,12 +33,6 @@ variable "namespace" {
   type        = string
 }
 
-variable "service_name" {
-  description = "The name of the service to create"
-  default     = "nginx-service"
-  type        = string
-}
-
 variable "label" {
   description = "The label to apply to all resources in this example"
   default     = "nginx"

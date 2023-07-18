@@ -1,6 +1,6 @@
 resource "kubernetes_service" "this" {
   metadata {
-    name      = var.service_name
+    name      = "nginx-service"
     namespace = kubernetes_namespace.this.metadata[0].name
   }
   spec {
